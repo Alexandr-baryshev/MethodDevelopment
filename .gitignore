@@ -32,4 +32,5 @@ hs_err_pid*
 .idea/modules.xml
 .idea/project-template.xml
 MethodDevelopment.iml
-src/
+
+.idea/vcs.xml
