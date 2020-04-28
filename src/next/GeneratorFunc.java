@@ -5,28 +5,28 @@ import java.util.UUID;
 public class GeneratorFunc {
 
 
-   public String sort_C(String jasperVar, int rStart, int rSize, int rStep,
-                               int cStart, int cSize, int cStep,
-                               int xp, int yp, int wp, int hp ) {
+   public String sort_C(String txtInput, int startR, int sizeR, int stepR,
+                               int startC, int sizeC, int stepC,
+                               int positX, int positY, int width, int height ) {
 
       String row = "", column = "", allResult = "";
-      int x = xp;
+      int x = positX;
 
-      for (int c = cStart; c <= cSize; c = c + cStep) {
-         int y = yp;
-         column = jasperVar.replace("C1", "C" + c).replaceAll("x=(\\S+)", "x=\"" + x +"\"")
-                 .replaceAll("width=(\\S+)", "width=\"" + wp +"\"");
+      for (int c = startC; c <= sizeC; c = c + stepC) {
+         int y = positY;
+         column = txtInput.replace("C1", "C" + c).replaceAll("x=(\\S+)", "x=\"" + x +"\"")
+                 .replaceAll("width=(\\S+)", "width=\"" + width +"\"");
 
-         for (int r = rStart; r <= rSize; r = r + rStep) {
+         for (int r = startR; r <= sizeR; r = r + stepR) {
             UUID uuid = UUID.randomUUID();
             String randomUUID = uuid.toString();
             row = column.replace("R1", "R" + r).replaceAll("y=(\\S+)", "y=\"" + y +"\"")
-                    .replaceAll("height=(\\S+)", "height=\"" + hp +"\"").replaceAll("uuid=(\\S+)", "uuid=\"" + randomUUID +"\">");
+                    .replaceAll("height=(\\S+)", "height=\"" + height +"\"").replaceAll("uuid=(\\S+)", "uuid=\"" + randomUUID +"\">");
 
             allResult = allResult + row + "\n";
-            y = y + (hp*rStep);
+            y = y + (height*stepR);
          }
-         x = x + wp;
+         x = x + (width*stepC);
       }
       return (allResult);
    }
