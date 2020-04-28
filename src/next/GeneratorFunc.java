@@ -53,23 +53,23 @@ public class GeneratorFunc {
    public String sortColumn(GeneratorData gd ) {
 
       String row = "", column = "", allResult = "";
-      int x = gd.positX();
+      int x = gd.getPositX();
 
-      for (int c = startC; c <= sizeC; c = c + stepC) {
-         int y = positY;
-         column = txtInput.replace("C1", "C" + c).replaceAll("x=(\\S+)", "x=\"" + x +"\"")
-                 .replaceAll("width=(\\S+)", "width=\"" + width +"\"");
+      for (int c = gd.getStartC(); c <= gd.getSizeC(); c = c + gd.getStepC()) {
+         int y = gd.getPositY();
+         column = gd.getTxtInput().replace("C1", "C" + c).replaceAll("x=(\\S+)", "x=\"" + x +"\"")
+                 .replaceAll("width=(\\S+)", "width=\"" + gd.getWidth() +"\"");
 
-         for (int r = startR; r <= sizeR; r = r + stepR) {
+         for (int r = gd.getStartR(); r <= gd.getSizeR(); r = r + gd.getStepR()) {
             UUID uuid = UUID.randomUUID();
             String randomUUID = uuid.toString();
             row = column.replace("R1", "R" + r).replaceAll("y=(\\S+)", "y=\"" + y +"\"")
-                    .replaceAll("height=(\\S+)", "height=\"" + height +"\"").replaceAll("uuid=(\\S+)", "uuid=\"" + randomUUID +"\">");
+                    .replaceAll("height=(\\S+)", "height=\"" + gd.getHeight() +"\"").replaceAll("uuid=(\\S+)", "uuid=\"" + randomUUID +"\">");
 
             allResult = allResult + row + "\n";
-            y = y + (height*stepR);
+            y = y + (gd.getHeight()*gd.getStepR());
          }
-         x = x + (width*stepC);
+         x = x + (gd.getWidth()*gd.getStepC());
       }
       return (allResult);
    }
