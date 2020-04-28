@@ -5,7 +5,7 @@ import java.util.UUID;
 public class GeneratorFunc {
 
 
-   public String sort_C(String txtInput, int startR, int sizeR, int stepR,
+   public String sortColumnParam(String txtInput, int startR, int sizeR, int stepR,
                                int startC, int sizeC, int stepC,
                                int positX, int positY, int width, int height ) {
 
@@ -34,7 +34,7 @@ public class GeneratorFunc {
 
 
 
-    public static String sort_R(String jasperVar, int rStart, int rSize, int rStep, int cStart, int cSize, int cStep) {
+    public static String sortRow(String jasperVar, int rStart, int rSize, int rStep, int cStart, int cSize, int cStep) {
         String row = "", column = "", allResult = "";
 
         for (int r = rStart; r <= rSize; r = r + rStep) {
@@ -47,5 +47,31 @@ public class GeneratorFunc {
         }
         return (allResult);
     }
+
+
+
+   public String sortColumn(GeneratorData gd ) {
+
+      String row = "", column = "", allResult = "";
+      int x = gd.positX();
+
+      for (int c = startC; c <= sizeC; c = c + stepC) {
+         int y = positY;
+         column = txtInput.replace("C1", "C" + c).replaceAll("x=(\\S+)", "x=\"" + x +"\"")
+                 .replaceAll("width=(\\S+)", "width=\"" + width +"\"");
+
+         for (int r = startR; r <= sizeR; r = r + stepR) {
+            UUID uuid = UUID.randomUUID();
+            String randomUUID = uuid.toString();
+            row = column.replace("R1", "R" + r).replaceAll("y=(\\S+)", "y=\"" + y +"\"")
+                    .replaceAll("height=(\\S+)", "height=\"" + height +"\"").replaceAll("uuid=(\\S+)", "uuid=\"" + randomUUID +"\">");
+
+            allResult = allResult + row + "\n";
+            y = y + (height*stepR);
+         }
+         x = x + (width*stepC);
+      }
+      return (allResult);
+   }
 
 }

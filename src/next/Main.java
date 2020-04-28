@@ -18,7 +18,7 @@ public class Main {
 
 
 
-        System.out.println(GFun.sort_C(v1,1,5,2,1,8,1,20,0,40,20));
+//        System.out.println(GFun.sortColumn(v1,1,5,2,1,8,1,20,0,40,20));
 
 
 
