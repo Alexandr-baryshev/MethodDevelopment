@@ -34,7 +34,7 @@ public class GeneratorFunc {
 
 
 
-    public static String sortRow(String jasperVar, int rStart, int rSize, int rStep, int cStart, int cSize, int cStep) {
+    public String sortRowParam(String jasperVar, int rStart, int rSize, int rStep, int cStart, int cSize, int cStep) {
         String row = "", column = "", allResult = "";
 
         for (int r = rStart; r <= rSize; r = r + rStep) {
@@ -49,8 +49,22 @@ public class GeneratorFunc {
     }
 
 
+   public String sortRow(GeneratorData gd) {
+      String row = "", column = "", allResult = "";
 
-   public String sortColumn(GeneratorData gd ) {
+      for (int r = gd.getStartR(); r <= gd.getSizeR(); r = r + gd.getStepR()) {
+         row = gd.getTxtInput().replace("R1", "R" + r);
+
+         for (int c = gd.getStartC(); c <= gd.getSizeC(); c = c + gd.getStepC()) {
+            column = row.replace("C1", "C" + c);
+            allResult = allResult + column + "\n";
+         }
+      }
+      return (allResult);
+   }
+
+
+   public String sortColumn(GeneratorData gd) {
 
       String row = "", column = "", allResult = "";
       int x = gd.getPositX();
