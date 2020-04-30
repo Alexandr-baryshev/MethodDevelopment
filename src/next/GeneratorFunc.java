@@ -78,7 +78,7 @@ public class GeneratorFunc {
             UUID uuid = UUID.randomUUID();
             String randomUUID = uuid.toString();
             row = column.replace("R1", "R" + r).replaceAll("y=(\\S+)", "y=\"" + y +"\"")
-                    .replaceAll("height=(\\S+)", "height=\"" + gd.getHeight() +"\"").replaceAll("uuid=(\\S+)", "uuid=\"" + randomUUID +"\">");
+                    .replaceAll("height=(\\S+)", "height=\"" + gd.getHeight() +"\"").replaceAll("uuid=(\\S+)", "uuid=\"" + randomUUID +"\"/>");
 
             allResult = allResult + row + "\n";
             y = y + (gd.getHeight()*gd.getStepR());

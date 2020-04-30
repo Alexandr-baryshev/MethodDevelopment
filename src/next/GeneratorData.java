@@ -7,10 +7,15 @@ public class GeneratorData {
    private int startR;
    private int sizeR;
    private int stepR;
+   private String targetR;
+   private String replaceR;
+
 
    private int startC;
    private int sizeC;
    private int stepC;
+   private String targetC;
+   private String replaceC;
 
    private int positX;
    private int positY;
@@ -94,5 +99,37 @@ public class GeneratorData {
    }
    public void setHeight(int height) {
       this.height = height;
+   }
+
+   public String getTargetR() {
+      return targetR;
+   }
+
+   public void setTargetR(String targetR) {
+      this.targetR = targetR;
+   }
+
+   public String getReplaceR() {
+      return replaceR;
+   }
+
+   public void setReplaceR(String replaceR) {
+      this.replaceR = replaceR;
+   }
+
+   public String getTargetC() {
+      return targetC;
+   }
+
+   public void setTargetC(String targetC) {
+      this.targetC = targetC;
+   }
+
+   public String getReplaceC() {
+      return replaceC;
+   }
+
+   public void setReplaceC(String replaceC) {
+      this.replaceC = replaceC;
    }
 }
