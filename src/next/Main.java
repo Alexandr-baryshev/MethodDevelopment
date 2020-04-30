@@ -21,14 +21,14 @@ public class Main {
       gd.setStartR(1);
       gd.setSizeR(28);
       gd.setStepR(1);
-      gd.setTargetR("R1");
-      gd.setReplaceR("R");
+      gd.setTargetR("1");
+      gd.setReplaceR("");
 
       gd.setStartC(1);
       gd.setSizeC(1);
       gd.setStepC(1);
-      gd.setTargetC("C1");
-      gd.setReplaceC("C");
+      gd.setTargetC("#");
+      gd.setReplaceC("");
 
       gd.setPositX(0);
       gd.setPositX(0);
