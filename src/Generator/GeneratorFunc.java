@@ -1,4 +1,4 @@
-package next;
+package Generator;
 
 import java.util.UUID;
 

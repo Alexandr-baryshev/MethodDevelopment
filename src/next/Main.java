@@ -1,6 +1,7 @@
 package next;
 
-import java.util.UUID;
+import Generator.GeneratorData;
+import Generator.GeneratorFunc;
 
 public class Main {
 

@@ -1,4 +1,4 @@
-package next;
+package Generator;
 
 public class GeneratorData {
 
