@@ -2,7 +2,8 @@ package Generator;
 
 public class GeneratorData {
 
-   private String txtInput;
+   private String inputTxt;
+   private String outTxt;
 
    private int startR;
    private int sizeR;
@@ -22,11 +23,11 @@ public class GeneratorData {
    private int width;
    private int height;
 
-   public String getTxtInput() {
-      return txtInput;
+   public String getInputTxt() {
+      return inputTxt;
    }
-   public void setTxtInput(String txtInput) {
-      this.txtInput = txtInput;
+   public void setInputTxt(String txtInput) {
+      this.inputTxt = txtInput;
    }
 
    public int getStartR() {
@@ -131,5 +132,13 @@ public class GeneratorData {
 
    public void setReplaceC(String replaceC) {
       this.replaceC = replaceC;
+   }
+
+   public String getOutTxt() {
+      return outTxt;
+   }
+
+   public void setOutTxt(String outTxt) {
+      this.outTxt = outTxt;
    }
 }

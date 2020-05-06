@@ -5,14 +5,14 @@ import java.util.UUID;
 public class GeneratorFunc {
 
 
-   public String sortColumn(GeneratorData gd) {
+   public String sortFunc(GeneratorData gd) {
 
       String row = "", column = "", allResult = "";
       int x = gd.getPositX();
 
       for (int c = gd.getStartC(); c <= gd.getSizeC(); c = c + gd.getStepC()) {
          int y = gd.getPositY();
-         column = gd.getTxtInput().replace(gd.getTargetC(), gd.getReplaceC() + c).replaceAll("x=(\\S+)", "x=\"" + x +"\"")
+         column = gd.getInputTxt().replace(gd.getTargetC(), gd.getReplaceC() + c).replaceAll("x=(\\S+)", "x=\"" + x +"\"")
                  .replaceAll("width=(\\S+)", "width=\"" + gd.getWidth() +"\"");
 
          for (int r = gd.getStartR(); r <= gd.getSizeR(); r = r + gd.getStepR()) {

@@ -16,7 +16,7 @@ public class Main {
               "\t\t\t</textField>";
 
 
-      gd.setTxtInput(v1);
+      gd.setInputTxt(v1);
 
 
       gd.setStartR(1);
@@ -37,7 +37,7 @@ public class Main {
       gd.setHeight(20);
 
 
-      System.out.println(gFun.sortColumn(gd));
+      System.out.println(gFun.sortFunc(gd));
 
 
 
