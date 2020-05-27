@@ -64,13 +64,13 @@ public class Main {
 
       JsonData jData = new Gson().fromJson(zapros, JsonData.class);
 
-      jData.columns.toArray();
+      String[] dd = (String[]) jData.columns.toArray();
 
-//      for (JsonData i : jData) {
-//
-//         System.out.println(i);
-//
-//      }
+      for (String i : dd) {
+
+         System.out.println(i);
+
+      }
 
    }
 }
