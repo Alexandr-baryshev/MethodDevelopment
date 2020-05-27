@@ -2,12 +2,14 @@ package next;
 
 import Generator.GeneratorData;
 import Generator.GeneratorFunc;
+import JsonToXML.Columns;
 import JsonToXML.JsonData;
 import com.google.gson.Gson;
 import com.google.gson.stream.JsonReader;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.util.List;
 
 public class Main {
 
@@ -48,52 +50,27 @@ public class Main {
 //         System.out.println(gFun.sortFunc(gd));
       }
 
-      // stringToJson();
 
       jsonToString();
 
    }
 
-//   public static void stringToJson() {
-//      JsonData jData = new JsonData( "Адрес" );
-//
-//      Gson gson = new Gson();
-//      String json = gson.toJson(jData);
-//
-//
-//   }
-
-
 
    public static void jsonToString() throws FileNotFoundException {
 
-      String zapros = "{\n" +
-            "  \"columns\": [\n" +
-            "    {\n" +
-            "      \"agg\": null,\n" +
-            "      \"alias\": null,\n" +
-            "      \"caption\": \"Адрес\",\n" +
-            "      \"columnSwitch\": null,\n" +
-            "      \"id\": \"id_addr_ADRESS_64169fec-c563-4cdc-97fd-325bda21028e\",\n" +
-            "      \"idField\": \"id_addr_ADRESS\"\n" +
-            "    },\n" +
-            "    {\n" +
-            "      \"agg\": null,\n" +
-            "      \"alias\": null,\n" +
-            "      \"caption\": \"Номер вызова\",\n" +
-            "      \"columnSwitch\": null,\n" +
-            "      \"id\": \"id_ce_CALL_NUMB_1980e272-59c4-48d0-b46b-987cdb242d39\",\n" +
-            "      \"idField\": \"id_ce_CALL_NUMB\"\n" +
-            "    }\n" +
-            "  ]\n" +
-            "}";
 
-//      JsonReader zapros = new JsonReader(new FileReader("C:\\Users\\Alexandr\\Desktop\\Запрос.json"));
+      JsonReader zapros = new JsonReader(new FileReader("C:\\Users\\Alexandr\\Desktop\\Запрос.json"));
 
-//      Gson gson = new Gson();
-//      JsonData[] jsonData = gson.fromJson(zapros, JsonData[].class);
 
+      JsonData jData = new Gson().fromJson(zapros, JsonData.class);
+
+      jData.columns.toArray();
+
+//      for (JsonData i : jData) {
+//
+//         System.out.println(i);
+//
+//      }
 
    }
-
 }

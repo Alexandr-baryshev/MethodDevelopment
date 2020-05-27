@@ -4,6 +4,6 @@ import java.util.List;
 
 public class JsonData{
 
-   List<Columns> columns;
+   public List<Columns> columns;
 
 }
