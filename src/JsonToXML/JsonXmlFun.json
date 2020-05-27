@@ -1,0 +1,20 @@
+{
+  "columns": [
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Адрес",
+      "columnSwitch": null,
+      "id": "id_addr_ADRESS_64169fec-c563-4cdc-97fd-325bda21028e",
+      "idField": "id_addr_ADRESS"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Номер вызова",
+      "columnSwitch": null,
+      "id": "id_ce_CALL_NUMB_1980e272-59c4-48d0-b46b-987cdb242d39",
+      "idField": "id_ce_CALL_NUMB"
+    }
+  ]
+}

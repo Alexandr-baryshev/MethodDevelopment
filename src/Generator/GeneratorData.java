@@ -2,6 +2,7 @@ package Generator;
 
 public class GeneratorData {
 
+
    private String inputTxt;
    private String outTxt;
 
