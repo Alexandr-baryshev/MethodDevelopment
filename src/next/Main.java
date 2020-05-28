@@ -95,12 +95,13 @@ public class Main {
          if (i.contains("Время")) {
             jasperDat = "<field name=\"" + i + "\" class=\"java.util.Date\"/>";
             jrxml = jrxml + jasperDat + "\n";
-
          }
+         // IFы еще не доработаны, добавить дни, признаки и т.д.
          else if (i.contains("Номер")) {
             jasperInt = "<field name=\"" + i + "\" class=\"java.lang.Integer\"/>";
              jrxml = jrxml + jasperInt + "\n";
          }
+
          else if (!i.contains("Номер") || !i.contains("Время") ) {
             jasperStr = "<field name=\"" + i + "\" class=\"java.lang.String\"/>";
             jrxml = jrxml + jasperStr + "\n";
