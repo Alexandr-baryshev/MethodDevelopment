@@ -1,15 +1,16 @@
 package next;
 
-import Generator.GeneratorData;
-import Generator.GeneratorFunc;
-import JsonToXML.Columns;
 import JsonToXML.JsonData;
 import com.google.gson.Gson;
+
+import com.google.gson.JsonElement;
 import com.google.gson.stream.JsonReader;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.util.Arrays;
 import java.util.List;
+
 
 public class Main {
 
@@ -59,18 +60,29 @@ public class Main {
    public static void jsonToString() throws FileNotFoundException {
 
 
-      JsonReader zapros = new JsonReader(new FileReader("C:\\Users\\Alexandr\\Desktop\\Запрос.json"));
+      JsonReader zapros = new JsonReader(new FileReader("src\\JsonToXML\\Запрос.json"));
+
+        Gson gson = new Gson();
+
+        JsonData jData = gson.fromJson(zapros, JsonData.class);
+        String ss = jData.columns.toString();
+
+        Object[] ob = jData.columns.toArray();
 
 
-      JsonData jData = new Gson().fromJson(zapros, JsonData.class);
+//      JsonElement json = gson.fromJson(zapros, JsonElement.class);
+//      String jsonInString = gson.toJson(json);
 
-      String[] dd = (String[]) jData.columns.toArray();
 
-      for (String i : dd) {
+      for ( Object i : ob) {
 
-         System.out.println(i);
-
+          System.out.println(i.getClass());
       }
 
+
+
+
+
    }
+
 }
