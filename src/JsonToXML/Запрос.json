@@ -1,318 +1,318 @@
 {
-    "columns": [
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Адрес",
-            "columnSwitch": null,
-            "id": "id_addr_ADRESS_64169fec-c563-4cdc-97fd-325bda21028e",
-            "idField": "id_addr_ADRESS"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Номер вызова",
-            "columnSwitch": null,
-            "id": "id_ce_CALL_NUMB_1980e272-59c4-48d0-b46b-987cdb242d39",
-            "idField": "id_ce_CALL_NUMB"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Время регистрации",
-            "columnSwitch": null,
-            "id": "id_ce_TIME_REG_5f14ebfe-7a39-421e-ad22-cbde79f1932d",
-            "idField": "id_ce_TIME_REG"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Основной диагноз по карте (ОД)",
-            "columnSwitch": null,
-            "id": "card03_icd10_primary_text_b27a7581-53ec-4771-bacd-e7c605bd329f",
-            "idField": "card03_icd10_primary_text"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Активный вызов в ЛПУ",
-            "columnSwitch": null,
-            "id": "c03_lpu_act_50348ad6-41db-422e-be1b-c982956c6e9d",
-            "idField": "c03_lpu_act"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "ФИО пациента",
-            "columnSwitch": null,
-            "id": "card03_p_c6bf0b90-00fd-4529-85f0-e8bdb3045e6a",
-            "idField": "card03_p"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Характер вызова по результату",
-            "columnSwitch": null,
-            "id": "c03_depa_cause_res_a768f845-fc30-4be7-a88a-0412da1adf6e",
-            "idField": "c03_depa_cause_res"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Пол",
-            "columnSwitch": null,
-            "id": "c03_pat_sex_d_5a443d54-afee-48dc-a6b5-b6aff304c3ca",
-            "idField": "c03_pat_sex_d"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Сигнальный лист",
-            "columnSwitch": null,
-            "id": "с03_pat_signal_list_c15997a9-5c3e-4f91-915f-68eb2a6852ef",
-            "idField": "с03_pat_signal_list"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Возраст",
-            "columnSwitch": null,
-            "id": "card03_age_p_3a02fa8d-a9bf-4fe6-a836-dae547ab31c2",
-            "idField": "card03_age_p"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Код (ОД)",
-            "columnSwitch": null,
-            "id": "card03_icd10_primary_cod_ecfefbf0-abd9-4bbb-a42d-e4246ff86f17",
-            "idField": "card03_icd10_primary_cod"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Тип происшествия",
-            "columnSwitch": null,
-            "id": "id_ce_RANK_f341009d-b5ac-4313-b74a-2c55c0d87077",
-            "idField": "id_ce_RANK"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Идентификатор происшествия",
-            "columnSwitch": null,
-            "id": "id_ce_ID_a71c094e-cb88-4608-ac0a-e461b4ba4b13",
-            "idField": "id_ce_ID"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Город",
-            "columnSwitch": null,
-            "id": "id_addr_CITY_NAME_8f1ccdc5-89a0-431c-8c2c-0fc44047dbd6",
-            "idField": "id_addr_CITY_NAME"
-        },
-        {
-            "agg": null,
-            "alias": null,
-            "caption": "Расшифровка (СД)",
-            "columnSwitch": null,
-            "id": "card03_icd10_acc_cap_d1df0124-131e-4e17-aeb2-bd5b5f3eab84",
-            "idField": "card03_icd10_acc_cap"
-        }
-    ],
-    "condition": {
+  "columns": [
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Адрес",
+      "columnSwitch": null,
+      "id": "id_addr_ADRESS_64169fec-c563-4cdc-97fd-325bda21028e",
+      "idField": "id_addr_ADRESS"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Номер вызова",
+      "columnSwitch": null,
+      "id": "id_ce_CALL_NUMB_1980e272-59c4-48d0-b46b-987cdb242d39",
+      "idField": "id_ce_CALL_NUMB"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Время регистрации",
+      "columnSwitch": null,
+      "id": "id_ce_TIME_REG_5f14ebfe-7a39-421e-ad22-cbde79f1932d",
+      "idField": "id_ce_TIME_REG"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Основной диагноз по карте (ОД)",
+      "columnSwitch": null,
+      "id": "card03_icd10_primary_text_b27a7581-53ec-4771-bacd-e7c605bd329f",
+      "idField": "card03_icd10_primary_text"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Активный вызов в ЛПУ",
+      "columnSwitch": null,
+      "id": "c03_lpu_act_50348ad6-41db-422e-be1b-c982956c6e9d",
+      "idField": "c03_lpu_act"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "ФИО пациента",
+      "columnSwitch": null,
+      "id": "card03_p_c6bf0b90-00fd-4529-85f0-e8bdb3045e6a",
+      "idField": "card03_p"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Характер вызова по результату",
+      "columnSwitch": null,
+      "id": "c03_depa_cause_res_a768f845-fc30-4be7-a88a-0412da1adf6e",
+      "idField": "c03_depa_cause_res"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Пол",
+      "columnSwitch": null,
+      "id": "c03_pat_sex_d_5a443d54-afee-48dc-a6b5-b6aff304c3ca",
+      "idField": "c03_pat_sex_d"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Сигнальный лист",
+      "columnSwitch": null,
+      "id": "с03_pat_signal_list_c15997a9-5c3e-4f91-915f-68eb2a6852ef",
+      "idField": "с03_pat_signal_list"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Возраст",
+      "columnSwitch": null,
+      "id": "card03_age_p_3a02fa8d-a9bf-4fe6-a836-dae547ab31c2",
+      "idField": "card03_age_p"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Код (ОД)",
+      "columnSwitch": null,
+      "id": "card03_icd10_primary_cod_ecfefbf0-abd9-4bbb-a42d-e4246ff86f17",
+      "idField": "card03_icd10_primary_cod"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Тип происшествия",
+      "columnSwitch": null,
+      "id": "id_ce_RANK_f341009d-b5ac-4313-b74a-2c55c0d87077",
+      "idField": "id_ce_RANK"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Идентификатор происшествия",
+      "columnSwitch": null,
+      "id": "id_ce_ID_a71c094e-cb88-4608-ac0a-e461b4ba4b13",
+      "idField": "id_ce_ID"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Город",
+      "columnSwitch": null,
+      "id": "id_addr_CITY_NAME_8f1ccdc5-89a0-431c-8c2c-0fc44047dbd6",
+      "idField": "id_addr_CITY_NAME"
+    },
+    {
+      "agg": null,
+      "alias": null,
+      "caption": "Расшифровка (СД)",
+      "columnSwitch": null,
+      "id": "card03_icd10_acc_cap_d1df0124-131e-4e17-aeb2-bd5b5f3eab84",
+      "idField": "card03_icd10_acc_cap"
+    }
+  ],
+  "condition": {
+    "conditions": [
+      {
         "conditions": [
-            {
-                "conditions": [
-                    {
-                        "action": "IS_NULL",
-                        "caption": "Источник информации происшествия",
-                        "description": null,
-                        "dictionary": "dic_src_et",
-                        "id": "id_ce_ID_SRC_TYPE_37c4799e-1f34-4fc6-a0f5-2792931a6691",
-                        "idField": "id_ce_ID_SRC_TYPE",
-                        "property": null,
-                        "type": "dictionary",
-                        "value": []
-                    },
-                    {
-                        "action": "NOT_IN",
-                        "caption": "Источник информации происшествия",
-                        "description": null,
-                        "dictionary": "dic_src_et",
-                        "id": "id_ce_ID_SRC_TYPE_115be5eb-043f-4e6a-9eaf-2e046a4c3128",
-                        "idField": "id_ce_ID_SRC_TYPE",
-                        "property": null,
-                        "type": "dictionary",
-                        "value": [
-                            {
-                                "dic_src_et_caption": "Системный",
-                                "dic_src_et_id": 8
-                            },
-                            {
-                                "dic_src_et_caption": "Информационная область",
-                                "dic_src_et_id": 9
-                            },
-                            {
-                                "dic_src_et_caption": "Р/к",
-                                "dic_src_et_id": 2
-                            }
-                        ]
-                    }
-                ],
-                "description": null,
-                "id": "logic_a3a13eab-2183-4510-82bd-4a22ccaf96b9",
-                "property": null,
-                "type": "logic_or"
-            },
-            {
-                "conditions": [
-                    {
-                        "action": null,
-                        "caption": "Признак ложного звонка",
-                        "description": null,
-                        "dictionary": null,
-                        "id": "id_ce_WRONG_CALL_c570c1fe-1cfb-494f-a6c2-c7946b24f8ab",
-                        "idField": "id_ce_WRONG_CALL",
-                        "property": null,
-                        "type": "boolean",
-                        "value": [
-                            {
-                                "value": -1
-                            }
-                        ]
-                    },
-                    {
-                        "action": null,
-                        "caption": "Признак ложного звонка",
-                        "description": null,
-                        "dictionary": null,
-                        "id": "id_ce_WRONG_CALL_644a0441-9aaf-4162-9fce-6a1947427876",
-                        "idField": "id_ce_WRONG_CALL",
-                        "property": null,
-                        "type": "boolean",
-                        "value": [
-                            {
-                                "value": 0
-                            }
-                        ]
-                    }
-                ],
-                "description": null,
-                "id": "logic_f3baace7-832b-4799-860b-19289c042ac6",
-                "property": null,
-                "type": "logic_or"
-            },
-            {
-                "conditions": [
-                    {
-                        "action": null,
-                        "caption": "Признак ложного вызова",
-                        "description": null,
-                        "dictionary": null,
-                        "id": "id_ce_WRONG_c1476866-7bd6-474c-acd8-b19487b02f02",
-                        "idField": "id_ce_WRONG",
-                        "property": null,
-                        "type": "boolean",
-                        "value": [
-                            {
-                                "value": -1
-                            }
-                        ]
-                    },
-                    {
-                        "action": null,
-                        "caption": "Признак ложного вызова",
-                        "description": null,
-                        "dictionary": null,
-                        "id": "id_ce_WRONG_a48443ad-c988-434c-81fa-5b454774b1f7",
-                        "idField": "id_ce_WRONG",
-                        "property": null,
-                        "type": "boolean",
-                        "value": [
-                            {
-                                "value": 0
-                            }
-                        ]
-                    }
-                ],
-                "description": null,
-                "id": "logic_727eaa30-2cec-4333-8148-570236e2d79c",
-                "property": null,
-                "type": "logic_or"
-            },
-            {
-                "action": "IS_NOT_NULL",
-                "caption": "Активный вызов в ЛПУ",
-                "description": null,
-                "dictionary": "dic_hospital",
-                "id": "c03_lpu_act_d328df3e-86b0-44e7-a351-3762b17f18bb",
-                "idField": "c03_lpu_act",
-                "property": null,
-                "type": "dictionary",
-                "value": []
-            }
+          {
+            "action": "IS_NULL",
+            "caption": "Источник информации происшествия",
+            "description": null,
+            "dictionary": "dic_src_et",
+            "id": "id_ce_ID_SRC_TYPE_37c4799e-1f34-4fc6-a0f5-2792931a6691",
+            "idField": "id_ce_ID_SRC_TYPE",
+            "property": null,
+            "type": "dictionary",
+            "value": []
+          },
+          {
+            "action": "NOT_IN",
+            "caption": "Источник информации происшествия",
+            "description": null,
+            "dictionary": "dic_src_et",
+            "id": "id_ce_ID_SRC_TYPE_115be5eb-043f-4e6a-9eaf-2e046a4c3128",
+            "idField": "id_ce_ID_SRC_TYPE",
+            "property": null,
+            "type": "dictionary",
+            "value": [
+              {
+                "dic_src_et_caption": "Системный",
+                "dic_src_et_id": 8
+              },
+              {
+                "dic_src_et_caption": "Информационная область",
+                "dic_src_et_id": 9
+              },
+              {
+                "dic_src_et_caption": "Р/к",
+                "dic_src_et_id": 2
+              }
+            ]
+          }
         ],
         "description": null,
-        "id": "logic_6d21d490-5f83-4d7a-ab66-f488bd3f2188",
+        "id": "logic_a3a13eab-2183-4510-82bd-4a22ccaf96b9",
         "property": null,
-        "type": "logic_and"
-    },
-    "distinct": false,
-    "fieldConditions": [
-        {
+        "type": "logic_or"
+      },
+      {
+        "conditions": [
+          {
             "action": null,
-            "caption": "Время регистрации",
+            "caption": "Признак ложного звонка",
             "description": null,
             "dictionary": null,
-            "id": "id_ce_TIME_REG_87dd4a83-2cde-481d-9e11-f42c82bf9327",
-            "idField": "id_ce_TIME_REG",
+            "id": "id_ce_WRONG_CALL_c570c1fe-1cfb-494f-a6c2-c7946b24f8ab",
+            "idField": "id_ce_WRONG_CALL",
             "property": null,
-            "type": "dateTime",
+            "type": "boolean",
             "value": [
-                {
-                    "value": "2020-02-01T00:00:00",
-                    "value1": "2020-03-01T00:00:00"
-                }
+              {
+                "value": -1
+              }
             ]
-        },
-        {
+          },
+          {
             "action": null,
-            "caption": "Активный вызов в ЛПУ",
-            "description": null,
-            "dictionary": "dic_hospital",
-            "id": "c03_lpu_act_8cd0ca0c-c5ca-4b71-ade1-03c84219e164",
-            "idField": "c03_lpu_act",
-            "property": null,
-            "type": "dictionary",
-            "value": []
-        },
-        {
-            "action": null,
-            "caption": "Район",
-            "description": null,
-            "dictionary": "dic_area",
-            "id": "id_addr_CITY_AREA_d_e4998817-3fd4-4b9f-988b-a18a3d58f171",
-            "idField": "id_addr_CITY_AREA_d",
-            "property": null,
-            "type": "dictionary",
-            "value": []
-        },
-        {
-            "action": null,
-            "caption": "Номер вызова",
+            "caption": "Признак ложного звонка",
             "description": null,
             "dictionary": null,
-            "id": "id_ce_CALL_NUMB_8fba316a-e2a5-4f7b-a90c-a26e4ede2fe0",
-            "idField": "id_ce_CALL_NUMB",
+            "id": "id_ce_WRONG_CALL_644a0441-9aaf-4162-9fce-6a1947427876",
+            "idField": "id_ce_WRONG_CALL",
             "property": null,
-            "type": "number",
-            "value": []
-        }
+            "type": "boolean",
+            "value": [
+              {
+                "value": 0
+              }
+            ]
+          }
+        ],
+        "description": null,
+        "id": "logic_f3baace7-832b-4799-860b-19289c042ac6",
+        "property": null,
+        "type": "logic_or"
+      },
+      {
+        "conditions": [
+          {
+            "action": null,
+            "caption": "Признак ложного вызова",
+            "description": null,
+            "dictionary": null,
+            "id": "id_ce_WRONG_c1476866-7bd6-474c-acd8-b19487b02f02",
+            "idField": "id_ce_WRONG",
+            "property": null,
+            "type": "boolean",
+            "value": [
+              {
+                "value": -1
+              }
+            ]
+          },
+          {
+            "action": null,
+            "caption": "Признак ложного вызова",
+            "description": null,
+            "dictionary": null,
+            "id": "id_ce_WRONG_a48443ad-c988-434c-81fa-5b454774b1f7",
+            "idField": "id_ce_WRONG",
+            "property": null,
+            "type": "boolean",
+            "value": [
+              {
+                "value": 0
+              }
+            ]
+          }
+        ],
+        "description": null,
+        "id": "logic_727eaa30-2cec-4333-8148-570236e2d79c",
+        "property": null,
+        "type": "logic_or"
+      },
+      {
+        "action": "IS_NOT_NULL",
+        "caption": "Активный вызов в ЛПУ",
+        "description": null,
+        "dictionary": "dic_hospital",
+        "id": "c03_lpu_act_d328df3e-86b0-44e7-a351-3762b17f18bb",
+        "idField": "c03_lpu_act",
+        "property": null,
+        "type": "dictionary",
+        "value": []
+      }
     ],
-    "limit": null,
-    "name": null,
+    "description": null,
+    "id": "logic_6d21d490-5f83-4d7a-ab66-f488bd3f2188",
     "property": null,
-    "type": "simple"
+    "type": "logic_and"
+  },
+  "distinct": false,
+  "fieldConditions": [
+    {
+      "action": null,
+      "caption": "Время регистрации",
+      "description": null,
+      "dictionary": null,
+      "id": "id_ce_TIME_REG_87dd4a83-2cde-481d-9e11-f42c82bf9327",
+      "idField": "id_ce_TIME_REG",
+      "property": null,
+      "type": "dateTime",
+      "value": [
+        {
+          "value": "2020-02-01T00:00:00",
+          "value1": "2020-03-01T00:00:00"
+        }
+      ]
+    },
+    {
+      "action": null,
+      "caption": "Активный вызов в ЛПУ",
+      "description": null,
+      "dictionary": "dic_hospital",
+      "id": "c03_lpu_act_8cd0ca0c-c5ca-4b71-ade1-03c84219e164",
+      "idField": "c03_lpu_act",
+      "property": null,
+      "type": "dictionary",
+      "value": []
+    },
+    {
+      "action": null,
+      "caption": "Район",
+      "description": null,
+      "dictionary": "dic_area",
+      "id": "id_addr_CITY_AREA_d_e4998817-3fd4-4b9f-988b-a18a3d58f171",
+      "idField": "id_addr_CITY_AREA_d",
+      "property": null,
+      "type": "dictionary",
+      "value": []
+    },
+    {
+      "action": null,
+      "caption": "Номер вызова",
+      "description": null,
+      "dictionary": null,
+      "id": "id_ce_CALL_NUMB_8fba316a-e2a5-4f7b-a90c-a26e4ede2fe0",
+      "idField": "id_ce_CALL_NUMB",
+      "property": null,
+      "type": "number",
+      "value": []
+    }
+  ],
+  "limit": null,
+  "name": null,
+  "property": null,
+  "type": "simple"
 }
