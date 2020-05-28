@@ -21,7 +21,7 @@ public class JsonToJasperClipboard {
       Gson gson = new Gson();
       JsonData jData = gson.fromJson(zapros, JsonData.class);
 
-
+      // Получение String массива из Gson
       ArrayList<String> fromJson = new ArrayList<String>();
 
       for (int i = 0; i < jData.columns.size(); i++) {
@@ -29,22 +29,29 @@ public class JsonToJasperClipboard {
          fromJson.add(jData.getColumns().get(i).getCaption());
       }
 
-
-      String jasperStr, jasperInt = null, jasperDat = null , jrxml = "";
+      // Перевод массива в JRXML FIELD
+      String jasperStr, jasperInt = null, jasperDat = null, jrxml = "";
+      boolean z;
 
       for (String i : fromJson) {
+
+         z = i.contains("Признак") || i.contains("Номер") || i.contains("номер") || i.contains("Идентификатор")
+               || i.equals("Лет") || i.equals("Месяцев") || i.equals("Дней") || i.equals("Амбулаторно")
+               || i.equals("Пол пациента код")  || i.equals("Серия полиса")
+               || i.equals("СМО код") || i.equals("СМО ОКАТО") || i.equals("Госпитализирован");
+
 
          if (i.contains("Время")) {
             jasperDat = "<field name=\"" + i + "\" class=\"java.util.Date\"/>";
             jrxml = jrxml + jasperDat + "\n";
          }
-         // IFы еще не доработаны, добавить дни, признаки и т.д.
-         else if (i.contains("Номер")) {
+
+         else if (z) {
             jasperInt = "<field name=\"" + i + "\" class=\"java.lang.Integer\"/>";
             jrxml = jrxml + jasperInt + "\n";
          }
 
-         else if (!i.contains("Номер") || !i.contains("Время") ) {
+         else {
             jasperStr = "<field name=\"" + i + "\" class=\"java.lang.String\"/>";
             jrxml = jrxml + jasperStr + "\n";
          }
@@ -53,7 +60,6 @@ public class JsonToJasperClipboard {
       StringSelection selection = new StringSelection(jrxml);
       Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
       clipboard.setContents(selection, selection);
-
 
 
    }
