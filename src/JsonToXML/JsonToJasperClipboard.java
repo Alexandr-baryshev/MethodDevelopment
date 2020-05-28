@@ -30,7 +30,7 @@ public class JsonToJasperClipboard {
       }
 
       // Перевод массива в JRXML FIELD
-      String jasperStr, jasperInt = null, jasperDat = null, jrxml = "";
+      String jasperStr, jasperInt, jasperDat, jrxml = "";
       boolean z;
 
       for (String i : fromJson) {
