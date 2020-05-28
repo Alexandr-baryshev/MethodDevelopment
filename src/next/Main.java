@@ -3,16 +3,18 @@ package next;
 import JsonToXML.JsonData;
 import com.google.gson.Gson;
 
-import com.google.gson.JsonElement;
 import com.google.gson.stream.JsonReader;
 
+import java.awt.*;
+import java.awt.datatransfer.Clipboard;
+import java.awt.datatransfer.StringSelection;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
-import java.util.Arrays;
-import java.util.List;
+import java.util.ArrayList;
 
 
 public class Main {
+
 
    public static void main(String[] args) throws FileNotFoundException {
 
@@ -52,37 +54,65 @@ public class Main {
       }
 
 
-      jsonToString();
+      jsonToStrArr();
+
+      // Эмулятор того, что должна возвращать функция "jsonToStrArr()"
+      String[] jsonToStrArr = {"Адрес", "Номер вызова", "Время регистрации"};
+
+         System.out.println(strToJrxml(jsonToStrArr));
+
 
    }
 
 
-   public static void jsonToString() throws FileNotFoundException {
+   public static void jsonToStrArr() throws FileNotFoundException {
 
 
       JsonReader zapros = new JsonReader(new FileReader("src\\JsonToXML\\Запрос.json"));
 
-        Gson gson = new Gson();
+      Gson gson = new Gson();
 
-        JsonData jData = gson.fromJson(zapros, JsonData.class);
-        String ss = jData.columns.toString();
-
-        Object[] ob = jData.columns.toArray();
+      JsonData jData = gson.fromJson(zapros, JsonData.class);
 
 
-//      JsonElement json = gson.fromJson(zapros, JsonElement.class);
-//      String jsonInString = gson.toJson(json);
-
-
-      for ( Object i : ob) {
-
-          System.out.println(i.getClass());
-      }
-
-
-
-
+//
+//        Object[] ob = jData.columns.toArray();
+//
+//      for ( Object i : ob) {
+//
+//          System.out.println(i);
+//      }
 
    }
+
+
+   static String strToJrxml(String[] strArr) {
+
+      String jasperStr = null, jasperInt = null, jasperDat = null , jrxml = "";
+
+      for (String i : strArr) {
+
+         if (i.contains("Время")) {
+            jasperDat = "<field name=\"" + i + "\" class=\"java.util.Date\"/>";
+            jrxml = jrxml + jasperDat + "\n";
+
+         }
+         else if (i.contains("Номер")) {
+            jasperInt = "<field name=\"" + i + "\" class=\"java.lang.Integer\"/>";
+             jrxml = jrxml + jasperInt + "\n";
+         }
+         else if (!i.contains("Номер") || !i.contains("Время") ) {
+            jasperStr = "<field name=\"" + i + "\" class=\"java.lang.String\"/>";
+            jrxml = jrxml + jasperStr + "\n";
+         }
+      }
+
+      StringSelection selection = new StringSelection(jrxml);
+      Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
+      clipboard.setContents(selection, selection);
+
+      return jrxml;
+   }
+
 
 }
