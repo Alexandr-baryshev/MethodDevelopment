@@ -1,5 +1,9 @@
 package next;
 
+import Generator.GeneratorData;
+import Generator.GeneratorFunc;
+import Generator.Kdata;
+import Generator.Kfun;
 import JsonToXML.JsonToJasperClipboard;
 import java.io.FileNotFoundException;
 
@@ -11,7 +15,7 @@ public class Main {
    public static void main(String[] args) throws FileNotFoundException {
 
       // Генератор
-      {
+//      {
 //         GeneratorData gd = new GeneratorData();
 //         GeneratorFunc gFun = new GeneratorFunc();
 //
@@ -43,14 +47,22 @@ public class Main {
 //
 //
 //         System.out.println(gFun.sortFunc(gd));
-      }
+//      }
 
 
+      Kdata kd = new Kdata(5, 7);
 
-      String jsonF = "src\\JsonToXML\\Запрос.json";
+      Kfun kf = new Kfun();
 
-      JsonToJasperClipboard j = new JsonToJasperClipboard();
-      j.jsonToStrArr(jsonF);
+     kd.setA(7);
+
+
+      System.out.println(kf.sort(kd));
+
+//      String jsonF = "src\\JsonToXML\\Запрос.json";
+//
+//      JsonToJasperClipboard j = new JsonToJasperClipboard();
+//      j.jsonToStrArr(jsonF);
 
 
 
