@@ -35,10 +35,10 @@ public class JsonToJasperClipboard {
 
       for (String i : fromJson) {
 
-         z = i.contains("Признак") || i.contains("Номер") || i.contains("номер") || i.contains("Идентификатор")
+         z = ( i.contains("Признак") || i.contains("Номер") || i.contains("номер") || i.contains("Идентификатор")
                || i.equals("Лет") || i.equals("Месяцев") || i.equals("Дней") || i.equals("Амбулаторно")
-               || i.equals("Пол пациента код")  || i.equals("Серия полиса")
-               || i.equals("СМО код") || i.equals("СМО ОКАТО") || i.equals("Госпитализирован");
+               || i.equals("Пол пациента код") || i.equals("СМО код") || i.equals("Госпитализирован") )
+               && !i.contains("полис");
 
 
          if (i.contains("Время")) {
@@ -55,12 +55,14 @@ public class JsonToJasperClipboard {
             jasperStr = "<field name=\"" + i + "\" class=\"java.lang.String\"/>";
             jrxml = jrxml + jasperStr + "\n";
          }
+
       }
+
+      System.out.println(jrxml);
 
       StringSelection selection = new StringSelection(jrxml);
       Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
       clipboard.setContents(selection, selection);
-
 
    }
 }
